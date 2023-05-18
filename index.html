@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>baiTapMang</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <form class="w-50 py-50">
+
+            <!-- Nhập số n -->
+            <h2>Nhập số n</h2>
+            <div class="row">
+                <div class="form-group">
+                    <input type="number" class="form-control col-10" id="soNguyen" placeholder="Nhập số n">
+                </div>
+                <button type="button" class="btn btn-primary col-2" id="btnThemSoNguyen">Thêm số</button>
+            </div>
+            <p class="bg-success mt-3" id="mangSoNguyen"></p>
+
+
+            <!-- 1.Tổng số dương -->
+
+            <h2>1.Tổng số dương</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnTinhTongDuong">Tính tổng số dương</button>
+            <p class="bg-success mt-3" id="result-1"></p>
+
+            <!-- 2.Đếm số dương -->
+
+            <h2>2.Đếm số dương</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnDemSoDuong">Đếm số dương</button>
+            <p class="bg-success mt-3" id="result-2"></p>
+
+            <!-- 3.Tìm số nhỏ nhất -->
+
+            <h2>3.Tìm số nhỏ nhất</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnTimMin">Tìm số nhỏ nhất</button>
+            <p class="bg-success mt-3" id="result-3"></p>
+
+            <!-- 4.Tìm số dương nhỏ nhất -->
+
+            <h2>4.Tìm số dương nhỏ nhất</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnTimMinDuong">Tìm số dương nhỏ nhất</button>
+            <p class="bg-success mt-3" id="result-4"></p>
+
+            <!-- 5.Tìm số chẵn cuối cùng  -->
+
+            <h2>5.Tìm số chẵn cuối cùng</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnTimSoChan">Tìm số chẵn cuối</button>
+            <p class="bg-success mt-3" id="result-5"></p>
+
+            <!-- 6.Đổi chỗ -->
+
+            <h2>6.Đổi chỗ</h2>
+            <div class="row">
+                <div class="form-group col-6">
+                    <input type="number" class="form-control" id="viTri1" placeholder="Nhập vị trí 1">
+                </div>
+                <div class="form-group col-6">
+                    <input type="number" class="form-control" id="viTri2" placeholder="Nhập vị trí 2">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="btnDoiCho">Đổi chỗ</button>
+            <p class="bg-success mt-3" id="result-6"></p>
+
+            <!-- 7.Sắp xếp tăng dần -->
+
+            <h2>7.Sắp xếp tăng dần</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnSXTang">Sắp xếp tăng</button>
+            <p class="bg-success mt-3" id="result-7"></p>
+
+            <!-- 8.Tìm số nguyên tố đầu tiên -->
+
+            <h2>8.Tìm số nguyên tố đầu tiên</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnTimSoNT">Tìm số nguyên tố đầu tiên</button>
+            <p class="bg-success mt-3" id="result-8"></p>
+
+            <!-- 9.Đếm số nguyên-->
+            <h2>9.Đếm số nguyên</h2>
+            <div class="row">
+                <div class="form-group">
+                    <input type="number" class="form-control col-10" id="soThuc" placeholder="Nhập số thực">
+                </div>
+                <button type="button" class="btn btn-primary col-2" id="btnThemSoThuc">Thêm số</button>
+            </div>
+            <p class="bg-success mt-3" id="mangSoThuc"></p>
+            <button type="button" class="btn btn-primary" id="btnDemSoNguyen">Đếm số nguyên</button>
+            <p class="bg-success mt-3" id="result-9"></p>
+
+            <!-- 10.So sánh số lượng số âm và số dương-->
+
+            <h2>10.So sánh số lượng số âm và số dương</h2>
+            <button type="button" class="btn btn-primary mt-3" id="btnSoSanh">So sánh</button>
+            <p class="bg-success mt-3" id="result-10"></p>
+
+        </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
